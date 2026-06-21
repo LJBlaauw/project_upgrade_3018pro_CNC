@@ -2,17 +2,18 @@
 
 Het project is gebaseerd op opensource tools:
  - Freecad (3D parametrichs CAD)
- - Kicad (PCB CAD ontwerp)
+ - Prusa slicer (3D printables voor Z unit en moerhouders
+ - Kicad (PCB CAD ontwerp pico CNC, firmware GRBL webbuilder)
  - librecad (2D CAD)
- - GRBLHAL (GRBL uitbruiding voor diverse 32 bit processors)
+ - GRBLHAL (GRBL uitbreiding voor diverse 32 bit processors)
 
 # Dit project heft de tekort komingen van de Vevor S3018 Pro Max op
 
  1. Niet stijf genoeg De RVS geleiders buigen door.
- 2. De Aluminiumm plaat is niet vlak.
+ 2. De Aluminium plaat is niet vlak.
  3. De spindel motor heeft een te klein vermogen.
  4. De gebruikte controller heeft de in en uitgangen direct naar buiten uitgevoerd, gevoelig voor storing.
- 5. Geen eindschatelaars voor homing.
+ 5. Geen eindschakelaars voor rustpositie.
  6. Te lichte XYZ motoren.
  7. Ondersteunt alleen GRBL.
  8. De moeren hebben backlash bij belasting.
@@ -29,5 +30,5 @@ Het project is gebaseerd op opensource tools:
  6. De XYZmotoren zijn door zwaardere typen vervangen.
  7. Er is een nieuwe controller pico-CNC/GRBLHAL toegevoegd (RP2040 of RP2350, 64 bit).
  8. De XYZ-moeren worden nu gesteld zodat er geen backlash meer is.
- 9. aansluiting voor een touch plate of direct met de spindle
- 10. ER zijn twee solid state uitgangen didirect uit de CNC router software aangestuurd kunnen worden.
+ 9. Aansluiting voor een touch plate of direct met de spindle
+ 10. ER zijn twee solid state uitgangen die direct uit de CNC router software aangestuurd kunnen worden.
